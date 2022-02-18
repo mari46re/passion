@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "the_family_homeregular";
+  src: url("fonte/thefamilyhome-axdz5-webfont.woff2") format("woff2"),
+    url("fonte/thefamilyhome-axdz5-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #fef4a8;
+}
+
+a {
+  text-decoration: none;
+  color: #991637;
+  font-weight: bold;
+}
+
+p {
+  font-family: merel, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
+  color: #991637;
+}
+
+h3 {
+  font-family: merel, sans-serif;
+
+  font-weight: 700;
+
+  font-style: normal;
+  color: #991637;
+}
+
+header {
+  background-color: #f299c169;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  color: #991637;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+header img {
+  width: 40%;
+  padding: 1rem;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+
+  padding: 2rem;
+}
+
+li:hover {
+  color: #c7e1c1;
+  text-shadow: 2px 2px 2px #991637;
+}
+
+h1,
+h2,
+button,
+header {
+  font-family: "the_family_homeregular";
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 5em;
+  display: flex;
+  place-content: center;
+  color: #991637;
+}
