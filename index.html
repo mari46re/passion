@@ -4,16 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="https://use.typekit.net/nmf3zij.css" />
     <link rel="icon" type="image/svg+xml" href="icon/logo.svg" />
     <link rel="stylesheet" href="style.css" />
     <title>DOLCE LINDE</title>
     <style>
+      img {
+        width: 100%;
+      }
+
       .splash {
         background-image: url("splash.jpg");
         background-size: cover;
         height: 100vh;
-        width: 100vw;
+        width: 100%;
+      }
+
+      h2 {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 3rem;
+      }
+
+      .image1,
+      .image2,
+      .image3,
+      .image4,
+      .image5,
+      .image6 {
+        border: hsla(345, 75%, 34%, 0.247) 2px solid;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 15px;
+        margin: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+      }
+
+      .gallery img {
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .img_taller {
+        /* transform: scale(1.1); */
+        height: 120%;
+      }
+
+      @media (max-width: 600px) {
+        .gallery {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 15px;
+          margin: 1rem;
+        }
+
+        .gallery img {
+          height: 100%;
+          object-fit: cover;
+        }
       }
     </style>
   </head>
@@ -30,7 +84,62 @@
     </header>
     <main>
       <section class="splash"></section>
+
+      <section id="section_one">
+        <h2>Anbefalinger</h2>
+        <div class="section_wrapper">
+          <figure class="gallery">
+            <img class="image1" src="lyserødkage.jpg" alt="" />
+            <div class="img_taller">
+              <img class="image2" src="lyserødkage.jpg" alt="" />
+            </div>
+            <img class="image3" src="lyserødkage.jpg" alt="" />
+          </figure>
+        </div>
+      </section>
+
+      <section id="section_two">
+        <h2>Instagram</h2>
+        <div class="section_wrapper">
+          <figure class="gallery">
+            <img class="image1" src="kage_hvid.jpg" alt="" />
+            <img class="image2" src="kage_hvid.jpg" alt="" />
+            <img class="image3" src="kage_hvid.jpg" alt="" />
+            <img class="image4" src="kage_hvid.jpg" alt="" />
+            <img class="image5" src="kage_hvid.jpg" alt="" />
+            <img class="image6" src="kage_hvid.jpg" alt="" />
+          </figure>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section class="footer_shop">
+        <h2>Lokation</h2>
+        Christian VIII's Palæ, Amalienborg Slotsplads 5
+        <br />
+        1257 København
+        <br />
+        E-mail
+        <br />
+        luksus@dolcelinde.dk
+
+        <br />
+        https://mariksen.dk/kea/2-semester/07_dynamisk-web/passion/index.html
+        <!--Indsæt link -->
+      </section>
+
+      <section class="opening">
+        <h2>Åbningstider</h2>
+        Slagtehusgade 9, Kødbyen, kontor
+        <br />
+        1715 København V
+        <br />
+        shop@vinhanen.dk
+        <!--Indsæt link -->
+        <br />
+        vinhanen-shop.dk
+        <!--Indsæt link -->
+      </section>
+    </footer>
   </body>
 </html>
