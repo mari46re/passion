@@ -10,16 +10,27 @@
     <link rel="stylesheet" href="style.css" />
     <title>DOLCE LINDE</title>
     <style>
+      /* ----------fælles---------- */
       img {
         width: 100%;
       }
-
+      /* ----------splash---------- */
       .splash {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
         background-image: url("splash.jpg");
         background-size: cover;
         height: 100vh;
         width: 100%;
       }
+
+      .splash img {
+        grid-column: 2;
+        grid-row: 2;
+      }
+
+      /* ----------first & second section---------- */
 
       h2 {
         text-align: center;
@@ -36,27 +47,54 @@
         border: hsla(345, 75%, 34%, 0.247) 2px solid;
       }
 
-      .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-        gap: 15px;
-        margin: 2rem;
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-      }
-
       .gallery img {
         height: 100%;
         object-fit: cover;
       }
 
-      .img_taller {
-        /* transform: scale(1.1); */
-        height: 120%;
+      /* ----------first section---------- */
+
+      #section_one {
+        background-color: #fef4a8;
       }
 
+      #section_one .image1,
+      .image3 {
+        place-self: center;
+      }
+
+      #section_one .gallery {
+        display: flex;
+      }
+
+      /* ----------first section---------- */
+      #section_one {
+        padding-bottom: 20px;
+      }
+
+      /* ----------footer---------- */
+      footer h3 {
+        font-family: "the_family_homeregular";
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        font-family: merel, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: #f299c169;
+        color: #991637;
+        backdrop-filter: blur(3px);
+      }
+
+      /* ----------mobile version---------- */
       @media (max-width: 600px) {
+        /* ----------first & second section---------- */
         .gallery {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
@@ -67,6 +105,74 @@
         .gallery img {
           height: 100%;
           object-fit: cover;
+        }
+
+        /* ----------first section---------- */
+        #section_one .image1,
+        .image3 {
+        }
+
+        /* ----------footer---------- */
+        address {
+          font-size: 0.5rem;
+        }
+
+        .footer_shop {
+          grid-column: 2;
+          grid-row: 1;
+        }
+
+        .footer_opening {
+          grid-column: 4;
+          grid-row: 1;
+        }
+
+        .footer_info {
+          grid-column: 3;
+          text-align: center;
+          padding-right: 30px;
+        }
+
+        footer button {
+          font-size: 0.8rem;
+        }
+      }
+
+      /* ----------desktop version---------- */
+      @media (min-width: 600px) {
+        #section_two {
+          width: 1000px;
+          margin: auto;
+        }
+
+        /* ----------first & second section---------- */
+
+        .footer_shop {
+          grid-column: 2;
+          grid-row: 1;
+        }
+
+        .footer_opening {
+          grid-column: 4;
+          grid-row: 1;
+        }
+
+        .footer_info {
+          grid-column: 3;
+          text-align: center;
+          padding-right: 30px;
+        }
+
+        .gallery {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+          gap: 15px;
+          margin: 2rem;
+        }
+
+        /* ----------first section---------- */
+        .img_taller {
+          height: 120%;
         }
       }
     </style>
@@ -83,7 +189,9 @@
       </nav>
     </header>
     <main>
-      <section class="splash"></section>
+      <section class="splash">
+        <img src="billeder/logo_uden_bg.svg" alt="" />
+      </section>
 
       <section id="section_one">
         <h2>Anbefalinger</h2>
@@ -114,31 +222,39 @@
     </main>
     <footer>
       <section class="footer_shop">
-        <h2>Lokation</h2>
-        Christian VIII's Palæ, Amalienborg Slotsplads 5
-        <br />
-        1257 København
-        <br />
-        E-mail
-        <br />
-        luksus@dolcelinde.dk
-
-        <br />
-        https://mariksen.dk/kea/2-semester/07_dynamisk-web/passion/index.html
-        <!--Indsæt link -->
+        <h3>Lokation</h3>
+        <address>
+          VIII's Palæ, Amalienborg Slotsplads 5
+          <br />
+          1257 København
+        </address>
       </section>
 
-      <section class="opening">
-        <h2>Åbningstider</h2>
-        Slagtehusgade 9, Kødbyen, kontor
+      <section class="footer_opening">
+        <h3>Tider</h3>
+
+        <address>
+          Mandag – Onsdag: 10 – 19
+          <br />
+          Torsdag – Fredag: 10 – 20
+          <br />
+          Lørdag - Søndag: 11 – 17
+        </address>
+      </section>
+
+      <section class="footer_contact">
+        <address></address>
+      </section>
+
+      <section class="footer_info">
+        <h3>E-mail</h3>
+        <address>luksus@dolcelinde.dk</address>
         <br />
-        1715 København V
-        <br />
-        shop@vinhanen.dk
-        <!--Indsæt link -->
-        <br />
-        vinhanen-shop.dk
-        <!--Indsæt link -->
+        <button
+          href="https://mariksen.dk/kea/2-semester/07_dynamisk-web/passion/index.html"
+        >
+          Hjemmeside
+        </button>
       </section>
     </footer>
   </body>

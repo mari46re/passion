@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background-color: #fef4a8;
+  background-color: #c7e0c0;
 }
 
 a {
@@ -87,6 +87,10 @@ header {
   font-family: "the_family_homeregular";
   font-weight: normal;
   font-style: normal;
+}
+
+h2 {
+  color: #991637;
 }
 
 h1 {
