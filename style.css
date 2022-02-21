@@ -4,6 +4,14 @@
   padding: 0;
 }
 
+img {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "the_family_homeregular";
   src: url("fonte/thefamilyhome-axdz5-webfont.woff2") format("woff2"),
@@ -49,6 +57,7 @@ header {
   position: fixed;
   top: 0;
   width: 100vw;
+  backdrop-filter: blur(3px);
 }
 
 header img {
@@ -87,4 +96,19 @@ h1 {
   display: flex;
   place-content: center;
   color: #991637;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px 4px #c7e1c1;
+}
+
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #f299c1;
+  color: #fef4a8;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 8px;
 }

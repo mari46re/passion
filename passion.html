@@ -17,6 +17,7 @@
 
 h1{
   margin-top: 200px;
+text-align: center;
 }
 main nav{
     display: flex;
@@ -25,15 +26,7 @@ main nav{
     gap: 5px;
 }
 
-button{
-    font-size: 1.5em;
-    font-weight: bold;
-    background-color: #F299C1;
-    color: #FEF4A8;
-    border: none;
-    padding: 0.5rem;
-    border-radius: 8px;
-}
+
 
 .valgt{
     border: 2px solid #991637;
@@ -47,10 +40,7 @@ place-content: center;
 color: #991637;
 }
 
-button:hover{
-    cursor: pointer;
-    box-shadow: 4px 4px 4px #C7E1C1;
-}
+
 
     #modal {
         position: fixed;
@@ -110,8 +100,7 @@ button:hover{
         section {
           display: grid;
           grid-template-columns: 1fr 1fr;
-        }
-          
+        }  
       }
    
    
@@ -119,7 +108,7 @@ button:hover{
   </head>
   <body>
     <header>
-        <a href=""><img src="logo.svg" alt="" /> </a>
+        <a href="index.html"><img src="logo.svg" alt="" /> </a>
         <nav>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
@@ -129,7 +118,7 @@ button:hover{
         </nav>
     </header>
     <main>
-        <h1>DOLCE LINDE</h1>
+        <h1>DOLCE LINDE's kager</h1>
         
       <nav>
         <button data-menu="alle" class="valgt">Alle</button>
@@ -139,7 +128,7 @@ button:hover{
         <button data-menu="cookies">Cookies</button>
         <button data-menu="cheesecakes">Cheesecakes</button>
         <button data-menu="drikkevarer">Drikkevarer</button>
-        <button data-menu="glutenfri">Glutenfri</button>
+        <!-- <button data-menu="glutenfri">Glutenfri</button> -->
       </nav>
 <h2>Alle:</h2>
       <aside id="modal">
@@ -216,26 +205,31 @@ button:hover{
             klon.querySelector(".navn").textContent = kage.navn;
             // klon.querySelector(".beskrivelse").textContent =
             //   kage.beskrivelse;
-            klon
-              .querySelector("article")
-              .addEventListener("click", () => visDetaljer(kage));
+            // klon
+            //   .querySelector("article")
+            //   .addEventListener("click", () => visDetaljer(kage));
+
+            klon.querySelector("article").addEventListener("click", () => {
+              location.href = `passion-singleview.html?id=${kage._id}`;
+            });
             klon.querySelector(".pris").textContent = kage.pris + " kr";
             dest.appendChild(klon);
           }
-        });
+        });}
 
-        function visDetaljer(kage) {
-          console.log(kage);
-          modal.querySelector("img").src = kage.billednavn;
-          modal.querySelector(".navn").textContent = kage.navn;
-          modal.querySelector(".beskrivelse").textContent = kage.beskrivelse;
-          modal.querySelector(".pris").textContent = kage.pris + " kr";
-          modal.style.display = "block";
-        }
 
-        document.querySelector("#luk").addEventListener("click", () => (modal.style.display = "none"));
-        modal.addEventListener("click", () => (modal.style.display = "none"));
-      }
+
+      //   function visDetaljer(kage) {
+      //     console.log(kage);
+      //     modal.querySelector("img").src = kage.billednavn;
+      //     modal.querySelector(".navn").textContent = kage.navn;
+      //     modal.querySelector(".beskrivelse").textContent = kage.beskrivelse;
+      //     modal.querySelector(".pris").textContent = kage.pris + " kr";
+      //     modal.style.display = "block";
+      //   }
+
+      //   document.querySelector("#luk").addEventListener("click", () => (modal.style.display = "none"));
+      //   modal.addEventListener("click", () => (modal.style.display = "none"));
     </script>
   </body>
 </html>
