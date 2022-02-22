@@ -111,24 +111,27 @@ button:hover {
 @media (max-width: 600px) {
   /* burgermenu */
 
-  button:hover {
+  .toggle-btn:hover {
     box-shadow: none;
   }
   .toggle-btn {
-    aspect-ratio: 225.827/184.84;
     background: transparent;
     border: none;
     display: block;
-    min-width: 44px;
-    min-height: 44px;
-    font-size: 1.1rem;
+
+    width: 144px;
+    height: 144px;
+    justify-content: space-between;
     cursor: pointer;
+    z-index: 0;
   }
   .btn-shown {
     background-image: url(/icon/gul-luk.svg);
-    background-size: 50px;
+    background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
+    justify-content: space-around;
+    z-index: 1;
   }
   nav {
     display: none;
@@ -223,4 +226,7 @@ footer {
   .footer_mobile {
     display: none;
   }
+}
+.hide {
+  display: none;
 }
