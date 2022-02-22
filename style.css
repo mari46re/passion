@@ -107,12 +107,42 @@ button:hover {
   box-shadow: 4px 4px 4px #c7e1c1;
 }
 
-button {
-  font-size: 1.5em;
-  font-weight: bold;
-  background-color: #f299c1;
-  color: #fef4a8;
-  border: none;
-  padding: 0.5rem;
-  border-radius: 8px;
+/* ----------mobile version---------- */
+@media (max-width: 600px) {
+  /* burgermenu */
+
+  button:hover {
+    box-shadow: none;
+  }
+  .toggle-btn {
+    aspect-ratio: 225.827/184.84;
+    background: transparent;
+    border: none;
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  .btn-shown {
+    background-image: url(/icon/gul-luk.svg);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  nav {
+    display: none;
+  }
+  nav.shown {
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
+}
+/* ----------desktop version---------- */
+@media (min-width: 600px) {
+  .toggle-btn {
+    display: none;
+  }
 }

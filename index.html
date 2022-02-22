@@ -94,6 +94,11 @@
 
       /* ----------mobile version---------- */
       @media (max-width: 600px) {
+        .img_taller {
+          max-width: 40%;
+          max-height: 40%;
+        }
+
         /* ----------first & second section---------- */
         .gallery {
           display: grid;
@@ -179,7 +184,11 @@
   </head>
   <body>
     <header>
-      <a href=""><img src="logo.svg" alt="" /> </a>
+      <a class="logo" href=""><img src="logo.svg" alt="" /> </a>
+      <button class="toggle-btn">
+        <img src="icon/gul-burger.svg" alt="" />
+      </button>
+
       <nav>
         <ul>
           <li><a href="index.html">Hjem</a></li>
@@ -257,5 +266,6 @@
         </button>
       </section>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
