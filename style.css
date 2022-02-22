@@ -57,7 +57,7 @@ header {
   position: fixed;
   top: 0;
   width: 100vw;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(4px);
 }
 
 header img {
