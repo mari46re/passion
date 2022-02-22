@@ -4,80 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://use.typekit.net/nmf3zij.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nmf3zij.css" />
     <meta name="robots" content="noindex" />
-    <link rel="icon" type="image/svg+xml" href="icon/logo.svg">
-<link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="icon/logo.svg" />
+    <link rel="stylesheet" href="style.css" />
     <title>DOLCE LINDE</title>
     <style>
+      /*main*/
 
-
-
-/*main*/
-
-h1{
-  margin-top: 200px;
-text-align: center;
-}
-main nav{
-    display: flex;
-    place-content: center;
-    flex-flow: wrap;
-    gap: 5px;
-}
-
-
-
-.valgt{
-    border: 2px solid #991637;
-}
-
-main h2{
-  margin: 2rem;
-  display: flex;
-  font-size: 3em;
-place-content: center;
-color: #991637;
-}
-
-
-
-    #modal {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100vw;
-        background-color: #9916378c;
-        display: none;
-        z-index: 100;
-      }
-
-      #modal article {
-        max-width: 80vw;
-        margin: 4em auto;
-        background-color: #C7E1C1;
-      }
-
-      #luk{
-        position: fixed;
-        right: 0;
-        padding: 1em;
-        font-size: 1.7em;
-        font-weight: bolder;
-        color: #991637;
-        cursor: pointer;
-      }
-
-      section {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        /* gap: 10px; */
-        /* margin: 1rem; */
+      h1 {
+        margin-top: 200px;
         text-align: center;
       }
 
-      article{
+      main nav {
+        display: flex;
+        place-content: center;
+        flex-flow: wrap;
+        gap: 5px;
+      }
+
+      .valgt {
+        border: 2px solid #991637;
+      }
+
+      main h2 {
+        margin: 2rem;
+        display: flex;
+        font-size: 3em;
+        place-content: center;
+        color: #991637;
+      }
+
+      .menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        text-align: center;
+      }
+
+      article {
         border: 1px solid #9916372c;
         margin: 0.5rem;
         padding: 0.5em;
@@ -85,29 +51,29 @@ color: #991637;
         border-radius: 8px;
       }
 
-      .beskrivelse, .pris{
+      .beskrivelse,
+      .pris {
         margin-top: 1rem;
       }
 
       @media (min-width: 1000px) {
-        section {
+        .menu {
           width: 1000px;
           margin: auto;
         }
       }
 
       @media (max-width: 600px) {
-        section {
+        .menu {
           display: grid;
           grid-template-columns: 1fr 1fr;
-        }  
+        }
       }
-   
-   
-    </style> 
+    </style>
   </head>
   <body>
     <header>
+<<<<<<< HEAD
         <a href="index.html"><img src="logo.svg" alt="" /> </a>
         <button class="toggle-btn">
         <img src="icon/gul-burger.svg" alt="" />
@@ -119,10 +85,20 @@ color: #991637;
                 <li><a href="#0">Kontakt</a></li>
             </ul>
         </nav>
+=======
+      <a href="index.html"><img src="logo.svg" alt="" /> </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="passion.html">Kager</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+>>>>>>> 6539749e8d714b3c11c08056f8018d7dd1ac5010
     </header>
     <main>
-        <h1>DOLCE LINDE's kager</h1>
-        
+      <h1>DOLCE LINDE's kager</h1>
+
       <nav>
         <button data-menu="alle" class="valgt">Alle</button>
         <button data-menu="moussekager">Moussekager</button>
@@ -133,18 +109,9 @@ color: #991637;
         <button data-menu="drikkevarer">Drikkevarer</button>
         <!-- <button data-menu="glutenfri">Glutenfri</button> -->
       </nav>
-<h2>Alle:</h2>
-      <aside id="modal">
-        <div id="luk">&#x2715</div>
-        <article>
-          <img src="" alt="" />
-          <h3 class="navn"></h3>
-          <p class="beskrivelse"></p>
-          <p class="pris"></p>
-        </article>
-      </aside>
+      <h2>Alle:</h2>
 
-    <section></section>
+      <section class="menu"></section>
 
       <template>
         <article>
@@ -155,8 +122,69 @@ color: #991637;
         </article>
       </template>
     </main>
+<<<<<<< HEAD
     <footer></footer>
 <script src="index.js"></script>
+=======
+    <footer>
+      <section class="footer_shop">
+        <h3>Lokation</h3>
+        <address>
+          VIII's Palæ, Amalienborg Slotsplads 5
+          <br />
+          1257 København
+        </address>
+      </section>
+
+      <section class="footer_opening">
+        <h3>Tider</h3>
+
+        <address>
+          Mandag – Onsdag: 10 – 19
+          <br />
+          Torsdag – Fredag: 10 – 20
+          <br />
+          Lørdag - Søndag: 11 – 17
+        </address>
+      </section>
+
+      <section class="footer_info">
+        <h3>E-mail</h3>
+        <address>luksus@dolcelinde.dk</address>
+        <br />
+        <button
+          href="https://mariksen.dk/kea/2-semester/07_dynamisk-web/passion/index.html"
+        >
+          Hjemmeside
+        </button>
+      </section>
+
+      <section class="footer_mobile">
+        <h3>Lokation</h3>
+        <address>
+          VIII's Palæ, Amalienborg Slotsplads 5
+          <br />
+          1257 København
+        </address>
+        <br />
+        <br />
+        <h3>Tider</h3>
+        <address>
+          Mandag – Onsdag: 10 – 19
+          <br />
+          Torsdag – Fredag: 10 – 20
+          <br />
+          Lørdag - Søndag: 11 – 17
+        </address>
+        <br />
+        <br />
+        <h3>Kontakt</h3>
+        <address>E-mail: luksus@dolcelinde.dk</address>
+        <br />
+        <address>Tlf.: +45 33 12 21 86</address>
+      </section>
+    </footer>
+>>>>>>> 6539749e8d714b3c11c08056f8018d7dd1ac5010
 
     <script>
       const url = "https://tema7-fd75.restdb.io/rest/dolcelinde";
@@ -178,7 +206,6 @@ color: #991637;
       }
 
       function filtrerKager() {
-        
         filter = this.dataset.menu;
         console.log("filter", filter);
         visKager();
@@ -188,7 +215,7 @@ color: #991637;
       }
 
       async function hentData() {
-        console.log("her er kagerne")
+        console.log("her er kagerne");
         const respons = await fetch(url, options);
         kager = await respons.json();
         console.log("Menuen", kager);
@@ -204,7 +231,7 @@ color: #991637;
           if (filter == kage.kategori || filter == "alle") {
             console.log("Valgt på menu", kage.kategori);
             const klon = template.cloneNode(true).content;
-            klon.querySelector("img").src = kage.billednavn;
+            klon.querySelector("img").src = "billeder/webp/" + kage.billeder;
             klon.querySelector(".navn").textContent = kage.navn;
             // klon.querySelector(".beskrivelse").textContent =
             //   kage.beskrivelse;
@@ -218,21 +245,8 @@ color: #991637;
             klon.querySelector(".pris").textContent = kage.pris + " kr";
             dest.appendChild(klon);
           }
-        });}
-
-
-
-      //   function visDetaljer(kage) {
-      //     console.log(kage);
-      //     modal.querySelector("img").src = kage.billednavn;
-      //     modal.querySelector(".navn").textContent = kage.navn;
-      //     modal.querySelector(".beskrivelse").textContent = kage.beskrivelse;
-      //     modal.querySelector(".pris").textContent = kage.pris + " kr";
-      //     modal.style.display = "block";
-      //   }
-
-      //   document.querySelector("#luk").addEventListener("click", () => (modal.style.display = "none"));
-      //   modal.addEventListener("click", () => (modal.style.display = "none"));
+        });
+      }
     </script>
    
   </body>
