@@ -57,7 +57,7 @@ header {
   position: fixed;
   top: 0;
   width: 100vw;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(4px);
 }
 
 header img {
@@ -107,14 +107,47 @@ button:hover {
   box-shadow: 4px 4px 4px #c7e1c1;
 }
 
-button {
-  font-size: 1.5em;
-  font-weight: bold;
-  background-color: #f299c1;
-  color: #fef4a8;
-  border: none;
-  padding: 0.5rem;
-  border-radius: 8px;
+/* ----------mobile version---------- */
+@media (max-width: 600px) {
+  /* burgermenu */
+
+  .toggle-btn:hover {
+    box-shadow: none;
+  }
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    display: block;
+
+    width: 144px;
+    height: 144px;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 0;
+  }
+  .btn-shown {
+    background-image: url(/icon/gul-luk.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: space-around;
+    z-index: 1;
+  }
+  nav {
+    display: none;
+  }
+  nav.shown {
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
+}
+/* ----------desktop version---------- */
+@media (min-width: 600px) {
+  .toggle-btn {
+    display: none;
+  }
 }
 
 /* ----------footer---------- */
@@ -122,4 +155,78 @@ footer h3 {
   font-family: "the_family_homeregular";
   font-weight: normal;
   font-style: normal;
+}
+
+footer {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-family: merel, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f299c169;
+  color: #991637;
+  backdrop-filter: blur(3px);
+}
+
+/* ----------mobile version---------- */
+@media (max-width: 600px) {
+  /* ----------footer---------- */
+  footer h3 {
+    font-size: 1.6rem;
+  }
+
+  address {
+    font-size: 1rem;
+  }
+
+  footer button {
+    font-size: 0.8rem;
+  }
+
+  .footer_opening,
+  .footer_shop,
+  .footer_info {
+    display: none;
+  }
+
+  .footer_mobile {
+    text-align: center;
+  }
+}
+
+/* ----------desktop version---------- */
+@media (min-width: 600px) {
+  /* ----------footer---------- */
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  }
+
+  footer h3 {
+    font-size: 1.8rem;
+  }
+
+  .footer_shop {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .footer_opening {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .footer_info {
+    grid-column: 3;
+    text-align: center;
+    padding-right: 30px;
+  }
+
+  .footer_mobile {
+    display: none;
+  }
+}
+.hide {
+  display: none;
 }
