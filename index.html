@@ -15,7 +15,7 @@
         width: 100%;
       }
 
-      body {
+      #body {
         background-color: #c7e1c1;
       }
       /* ----------splash---------- */
@@ -76,34 +76,12 @@
         padding-bottom: 20px;
       }
 
-      /* ----------footer---------- */
-      footer h3 {
-        font-family: "the_family_homeregular";
-        font-weight: normal;
-        font-style: normal;
-      }
-
-      footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        font-family: merel, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        background-color: #f299c169;
-        color: #991637;
-        backdrop-filter: blur(3px);
-      }
-
       /* ----------mobile version---------- */
       @media (max-width: 600px) {
         .splash h1 {
           font-size: 6rem;
         }
-        .img_taller {
-          max-width: 40%;
-        }
+
         /* ----------first & second section---------- */
         .gallery {
           display: grid;
@@ -117,29 +95,8 @@
           object-fit: cover;
         }
 
-        /* ----------footer---------- */
-        address {
-          font-size: 0.5rem;
-        }
-
-        .footer_shop {
-          grid-column: 2;
-          grid-row: 1;
-        }
-
-        .footer_opening {
-          grid-column: 4;
-          grid-row: 1;
-        }
-
-        .footer_info {
-          grid-column: 3;
-          text-align: center;
-          padding-right: 30px;
-        }
-
-        footer button {
-          font-size: 0.8rem;
+        .img_taller {
+          max-width: 40%;
         }
       }
 
@@ -152,24 +109,6 @@
         #section_two {
           width: 1000px;
           margin: auto;
-        }
-
-        /* ----------first & second section---------- */
-
-        .footer_shop {
-          grid-column: 2;
-          grid-row: 1;
-        }
-
-        .footer_opening {
-          grid-column: 4;
-          grid-row: 1;
-        }
-
-        .footer_info {
-          grid-column: 3;
-          text-align: center;
-          padding-right: 30px;
         }
 
         .gallery {
@@ -186,7 +125,7 @@
       }
     </style>
   </head>
-  <body>
+  <body id="body">
     <header>
       <a href=""><img src="billeder/logo_minus_navn.svg" alt="" /> </a>
       <nav>
@@ -251,19 +190,42 @@
         </address>
       </section>
 
-      <section class="footer_contact">
-        <address></address>
-      </section>
-
       <section class="footer_info">
-        <h3>E-mail</h3>
-        <address>luksus@dolcelinde.dk</address>
+        <h3>Kontakt</h3>
+        <address>E-mail: luksus@dolcelinde.dk</address>
+        <br />
+        <address>Tlf.: +45 33 12 21 86</address>
         <br />
         <button
           href="https://mariksen.dk/kea/2-semester/07_dynamisk-web/passion/index.html"
         >
           Hjemmeside
         </button>
+      </section>
+
+      <section class="footer_mobile">
+        <h3>Lokation</h3>
+        <address>
+          VIII's Palæ, Amalienborg Slotsplads 5
+          <br />
+          1257 København
+        </address>
+        <br />
+        <br />
+        <h3>Tider</h3>
+        <address>
+          Mandag – Onsdag: 10 – 19
+          <br />
+          Torsdag – Fredag: 10 – 20
+          <br />
+          Lørdag - Søndag: 11 – 17
+        </address>
+        <br />
+        <br />
+        <h3>Kontakt</h3>
+        <address>E-mail: luksus@dolcelinde.dk</address>
+        <br />
+        <address>Tlf.: +45 33 12 21 86</address>
       </section>
     </footer>
   </body>
