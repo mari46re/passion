@@ -107,6 +107,24 @@ button:hover {
   box-shadow: 4px 4px 4px #c7e1c1;
 }
 
+/* ----------footer---------- */
+footer h3 {
+  font-family: "the_family_homeregular";
+  font-weight: normal;
+  font-style: normal;
+}
+
+footer {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-family: merel, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f299c169;
+  color: #991637;
+  backdrop-filter: blur(3px);
+}
+
 /* ----------mobile version---------- */
 @media (max-width: 600px) {
   /* burgermenu */
@@ -142,30 +160,6 @@ button:hover {
     flex: 1 1 100%;
     flex-flow: column;
   }
-}
-/* ----------desktop version---------- */
-@media (min-width: 600px) {
-  .toggle-btn {
-    display: none;
-  }
-}
-
-/* ----------footer---------- */
-footer h3 {
-  font-family: "the_family_homeregular";
-  font-weight: normal;
-  font-style: normal;
-}
-
-footer {
-  padding-bottom: 20px;
-  padding-top: 20px;
-  font-family: merel, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #f299c169;
-  color: #991637;
-  backdrop-filter: blur(3px);
 }
 
 /* ----------mobile version---------- */
@@ -226,7 +220,12 @@ footer {
   .footer_mobile {
     display: none;
   }
-}
-.hide {
-  display: none;
+
+  .hide {
+    display: none;
+  }
+
+  .toggle-btn {
+    display: none;
+  }
 }
