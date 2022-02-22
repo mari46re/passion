@@ -96,7 +96,7 @@
       <button>< TILBAGE</button>
       <article>
         <div class="billede">
-          <img src="billeder/moussekage2.jpg" alt="" />
+          <img class="kager" src="" alt="" />
         </div>
         <div class="info">
           <h3 class="navn"></h3>
@@ -129,9 +129,7 @@
       }
 
       function vis() {
-        document.querySelector(".navn").textContent =
-          kage.fornavn + " " + kage.efternavn;
-        // document.querySelector("img").src = "faces/" + kage.billede;
+        document.querySelector(".kager").src = "billeder/webp/" + kage.billeder;
         document.querySelector(".navn").textContent = kage.navn;
         document.querySelector(".beskrivelse").textContent = kage.beskrivelse;
         document.querySelector(".pris").textContent = kage.pris + " kr";

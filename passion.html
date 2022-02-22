@@ -191,7 +191,7 @@
           if (filter == kage.kategori || filter == "alle") {
             console.log("Valgt på menu", kage.kategori);
             const klon = template.cloneNode(true).content;
-            klon.querySelector("img").src = kage.billednavn;
+            klon.querySelector("img").src = "billeder/webp/" + kage.billeder;
             klon.querySelector(".navn").textContent = kage.navn;
             // klon.querySelector(".beskrivelse").textContent =
             //   kage.beskrivelse;
