@@ -123,16 +123,3 @@ footer h3 {
   font-weight: normal;
   font-style: normal;
 }
-
-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  font-family: merel, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #f299c169;
-  color: #991637;
-  backdrop-filter: blur(3px);
-}
