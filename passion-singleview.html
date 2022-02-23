@@ -32,6 +32,7 @@
 
       article {
         margin: 1rem;
+        margin-bottom: 100px;
         padding: 1rem;
         padding-bottom: 2rem;
         border: 1px solid #9916372c;
@@ -62,7 +63,7 @@
         }
 
         button {
-          margin-left: 4rem;
+          margin-left: 3rem;
           margin-top: 150px;
         }
 
@@ -79,11 +80,19 @@
           font-size: 2rem;
         }
       }
+
+      @media (max-width: 600px) {
+        button {
+          margin-top: 150px;
+        }
+      }
     </style>
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="logo.svg" alt="" /> </a>
+      <a href="index.html"
+        ><img src="billeder/logo_minus_navn.svg" alt="" />
+      </a>
       <nav>
         <ul>
           <li><a href="index.html">Hjem</a></li>
