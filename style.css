@@ -31,7 +31,7 @@ a {
 }
 
 p {
-  font-family: merel, sans-serif;
+  font-family: merel;
 
   font-weight: 400;
 
@@ -40,7 +40,7 @@ p {
 }
 
 h3 {
-  font-family: merel, sans-serif;
+  font-family: merel;
 
   font-weight: 700;
 
@@ -129,7 +129,7 @@ footer h3 {
 footer {
   padding-bottom: 20px;
   padding-top: 20px;
-  font-family: merel, sans-serif;
+  font-family: merel;
   font-weight: 400;
   font-style: normal;
   background-color: #f299c169;
