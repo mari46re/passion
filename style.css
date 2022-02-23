@@ -21,12 +21,12 @@ html {
 }
 
 body {
-  background-color: #fef4a8;
+  background-color: #fff6a6;
 }
 
 a {
   text-decoration: none;
-  color: #991637;
+  color: #990d42;
   font-weight: bold;
 }
 
@@ -36,7 +36,7 @@ p {
   font-weight: 400;
 
   font-style: normal;
-  color: #991637;
+  color: #990d42;
 }
 
 h3 {
@@ -45,7 +45,7 @@ h3 {
   font-weight: 700;
 
   font-style: normal;
-  color: #991637;
+  color: #990d42;
 }
 
 header {
@@ -53,7 +53,7 @@ header {
   display: flex;
   justify-content: space-around;
   font-size: 2rem;
-  color: #991637;
+  color: #990d42;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -76,8 +76,8 @@ header nav ul {
 }
 
 a:hover {
-  color: #f299c1;
-  text-shadow: 2px 2px 2px #991637;
+  color: #ffa1b8;
+  text-shadow: 2px 2px 2px #990d42;
 }
 
 h1,
@@ -90,7 +90,7 @@ header {
 }
 
 h2 {
-  color: #991637;
+  color: #990d42;
 }
 
 h1 {
@@ -99,7 +99,7 @@ h1 {
   font-size: 5em;
   display: flex;
   place-content: center;
-  color: #991637;
+  color: #990d42;
 }
 
 button:hover {
@@ -112,8 +112,8 @@ button:hover {
 button {
   font-size: 1.5em;
   font-weight: bold;
-  background-color: #f299c1;
-  color: #fef4a8;
+  background-color: #ffa1b8;
+  color: #fff6a6;
   border: none;
   padding: 0.5rem;
   border-radius: 8px;
@@ -132,8 +132,8 @@ footer {
   font-family: merel;
   font-weight: 400;
   font-style: normal;
-  background-color: #f299c169;
-  color: #991637;
+  background-color: #ffa1b862;
+  color: #990d42;
   backdrop-filter: blur(3px);
 }
 
