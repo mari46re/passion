@@ -152,15 +152,13 @@ footer {
     width: 144px;
     justify-content: space-between;
     cursor: pointer;
-    z-index: 0;
   }
   .btn-shown {
-    background-image: url(/icon/gul-luk.svg);
+    background-image: url(icon/lyserød-luk.svg);
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
     justify-content: space-around;
-    z-index: 1;
   }
   nav {
     display: none;
