@@ -18,4 +18,4 @@ function toggleMenu() {
     btn;
   }
 }
-btn.addEventListener("click", toggleMenu);
+btn.addEventListener("click", toggleMenu); // når man klikker på btn kalder den på togglemenu
