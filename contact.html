@@ -14,7 +14,7 @@
       /* ----------desktop version---------- */
       @media (min-width: 800px) {
         /* style unik til siden, med grid og flex */
-        main {
+        #content {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           column-gap: 2vw;
@@ -60,7 +60,7 @@
       }
       /* ----------mobil version---------- */
       @media (max-width: 800px) {
-        main {
+        #content {
           margin-top: 20%;
           margin-left: 1rem;
           margin-right: 1rem;
@@ -103,38 +103,40 @@
     </header>
 
     <main>
-      <aside>
-        <h4>Kontakt info</h4>
-        <ul class="contact">
-          <li>Mail: luksus@dolcelinde.dk</li>
-          <li>tlf: +45 33 12 21 86</li>
-          <li>
-            Adresse: VIII's Palæ, Amalienborg Slotsplads 5
-            <br />
-            1257 København
-          </li>
-        </ul>
-        <h4>Sociale media</h4>
-        <ul class="contact">
-          <li><a href=""> Facebook</a></li>
-          <li><a href="">Instergrame </a></li>
-          <li><a href="">Twitter</a></li>
-        </ul>
-      </aside>
-      <!-- Google map embed, copy past fra internet side, ændrede i iframe for at tilpasse det til hjemmesiden.-->
+      <section id="content">
+        <aside>
+          <h4>Kontakt info</h4>
+          <ul class="contact">
+            <li>Mail: luksus@dolcelinde.dk</li>
+            <li>tlf: +45 33 12 21 86</li>
+            <li>
+              Adresse: VIII's Palæ, Amalienborg Slotsplads 5
+              <br />
+              1257 København
+            </li>
+          </ul>
+          <h4>Sociale media</h4>
+          <ul class="contact">
+            <li><a href=""> Facebook</a></li>
+            <li><a href="">Instergrame </a></li>
+            <li><a href="">Twitter</a></li>
+          </ul>
+        </aside>
+        <!-- Google map embed, copy past fra internet side, ændrede i iframe for at tilpasse det til hjemmesiden.-->
 
-      <article>
-        <div class="mapouter">
-          <iframe
-            src="https://maps.google.com/maps?q=Christian%20VIII's%20Pal%C3%A6,%20Amalienborg%20Slotsplads%205,%201257%20K%C3%B8benhavn&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            width="100%"
-            height="100%"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-        </div>
-      </article>
+        <article>
+          <div class="mapouter">
+            <iframe
+              src="https://maps.google.com/maps?q=Christian%20VIII's%20Pal%C3%A6,%20Amalienborg%20Slotsplads%205,%201257%20K%C3%B8benhavn&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer>
