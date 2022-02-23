@@ -7,7 +7,7 @@
     <link rel="icon" type="image/svg+xml" href="icon/logo.svg" />
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="style.css" />
-    <title>DOLCE LINDE</title>
+    <title>Kage | DOLCE LINDE</title>
 
     <style>
       article {
@@ -107,7 +107,7 @@
       </nav>
     </header>
     <main>
-      <button>< TILBAGE</button>
+      <button id="tilbage">TILBAGE</button>
       <article>
         <div class="billede">
           <img class="kager" src="" alt="" />
@@ -145,11 +145,6 @@
         <h3>E-mail</h3>
         <address>luksus@dolcelinde.dk</address>
         <br />
-        <button
-          href="https://mariksen.dk/kea/2-semester/07_dynamisk-web/passion/index.html"
-        >
-          Hjemmesiden
-        </button>
       </section>
 
       <section class="footer_mobile">
@@ -208,7 +203,7 @@
         document.querySelector(".pris").textContent = kage.pris + " kr";
       }
 
-      document.querySelector("button").addEventListener("click", () => {
+      document.querySelector("#tilbage").addEventListener("click", () => {
         history.back();
       });
 
