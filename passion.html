@@ -222,12 +222,6 @@
             const klon = template.cloneNode(true).content;
             klon.querySelector("img").src = "billeder/webp/" + kage.billeder;
             klon.querySelector(".navn").textContent = kage.navn;
-            // klon.querySelector(".beskrivelse").textContent =
-            //   kage.beskrivelse;
-            // klon
-            //   .querySelector("article")
-            //   .addEventListener("click", () => visDetaljer(kage));
-
             klon.querySelector("article").addEventListener("click", () => {
               location.href = `passion-singleview.html?id=${kage._id}`;
             });
