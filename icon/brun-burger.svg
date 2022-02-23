@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170.586" height="143.112" viewBox="0 0 170.586 143.112">
+  <g id="Group_28" data-name="Group 28" transform="translate(-52.615 -57.067)">
+    <g id="Group_25" data-name="Group 25" transform="translate(-536 -463)">
+      <line id="Line_16" data-name="Line 16" x2="170.586" transform="translate(588.615 585.315)" fill="none" stroke="#7a4d43" stroke-width="25" opacity="0.84"/>
+      <line id="Line_17" data-name="Line 17" x2="170.586" transform="translate(588.615 650.679)" fill="none" stroke="#7a4d43" stroke-width="25" opacity="0.84"/>
+      <line id="Line_18" data-name="Line 18" x2="170.586" transform="translate(588.615 617.997)" fill="none" stroke="#7a4d43" stroke-width="25" opacity="0.84"/>
+      <g id="Group_15" data-name="Group 15" transform="translate(649.901 521.875)">
+        <path id="Path_1" data-name="Path 1" d="M0,21.128C9.845-3.451,34.412.19,34.412.19" transform="translate(0 18.414) rotate(-21)" fill="none" stroke="#7a4d43" stroke-width="5"/>
+        <path id="Path_2" data-name="Path 2" d="M0,24.026C10.415-3.924,36.4.216,36.4.216" transform="matrix(0.574, -0.819, 0.819, 0.574, 15.418, 29.818)" fill="none" stroke="#7a4d43" stroke-width="5"/>
+      </g>
+      <g id="Ellipse_9" data-name="Ellipse 9" transform="translate(641.936 557.315)" fill="#990d42" stroke="#6c0a2f" stroke-width="2">
+        <ellipse cx="17" cy="14" rx="17" ry="14" stroke="none"/>
+        <ellipse cx="17" cy="14" rx="16" ry="13" fill="none"/>
+      </g>
+      <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(665.936 557.315)" fill="#990d42" stroke="#6c0a2f" stroke-width="2">
+        <ellipse cx="16.5" cy="14" rx="16.5" ry="14" stroke="none"/>
+        <ellipse cx="16.5" cy="14" rx="15.5" ry="13" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
