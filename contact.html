@@ -15,26 +15,50 @@
       h1 {
         margin-top: 150px;
       }
+      h4 {
+        font-family: "the_family_homeregular";
+        font-weight: normal;
+        font-style: normal;
+        color: #991637;
+
+        font-family: merel, sans-serif;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 20px;
+      }
+      .contact {
+        font-size: 28px;
+
+        inline-size: 20rem;
+      }
+      li {
+        list-style: none;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+      aside {
+        border: hsla(345, 75%, 34%, 0.247) 2px solid;
+      }
 
       /* ----------desktop version---------- */
-      @media (min-width: 800px) {
+      @media (min-width: 600px) {
         /* style unik til siden, med grid og flex */
         #content {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          column-gap: 2vw;
+
           margin-top: 5rem;
           margin-left: 1rem;
           margin-right: 1rem;
           margin-bottom: 10px;
         }
         aside {
-          background-color: #c7e1c1;
+          background-color: #c6e0c0b0;
           grid-column: 1;
           gap: 10px;
-          min-width: 200px;
-          max-width: 400px;
-          max-height: auto;
+
+          max-width: 420px;
+
           padding: 2rem;
         }
 
@@ -44,17 +68,7 @@
           grid-column: 2;
           position: relative;
         }
-        h4 {
-          font-family: merel, sans-serif;
-          padding-top: 15px;
-          padding-bottom: 15px;
-          font-size: 20px;
-        }
-        .contact {
-          font-size: 28px;
-          text-shadow: none;
-          inline-size: 20rem;
-        }
+
         /* iframe bruges på google map embeded */
         iframe {
           width: 100%;
@@ -64,15 +78,19 @@
         }
       }
       /* ----------mobil version---------- */
-      @media (max-width: 800px) {
+      @media (max-width: 600px) {
         #content {
           margin-top: 20%;
           margin-left: 1rem;
           margin-right: 1rem;
           margin-bottom: 10px;
         }
+        .contact {
+          font-size: 20px;
+          inline-size: 10rem;
+        }
         aside {
-          background-color: #c7e1c1;
+          background-color: #c6e0c0b0;
 
           gap: 10px;
           min-width: 200px;
