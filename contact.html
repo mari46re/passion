@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Kontakt</title>
     <style>
+<<<<<<< HEAD
       .splash {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
@@ -44,18 +45,83 @@
         border-width: 2vh;
         grid-row: 2;
         position: relative;
+=======
+      header {
+        z-index: 9999;
+>>>>>>> 4fad1da04b493ea4f70afbcc52c0fc8c2d262391
       }
 
-      #contact {
-        font-size: 28px;
-        text-shadow: none;
+      /* ----------desktop version---------- */
+      @media (min-width: 800px) {
+        /* style unik til siden, med grid og flex */
+        #content {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 2vw;
+          margin-top: 20%;
+          margin-left: 1rem;
+          margin-right: 1rem;
+          margin-bottom: 10px;
+        }
+        aside {
+          background-color: #c7e1c1;
+          grid-column: 1;
+          gap: 10px;
+          min-width: 200px;
+          max-width: 400px;
+          max-height: auto;
+          padding: 2rem;
+        }
+
+        /* article der indeholder google map */
+        article {
+          border: hsla(345, 75%, 34%, 0.247) 2px solid;
+          grid-column: 2;
+          position: relative;
+        }
+        h4 {
+          font-family: merel, sans-serif;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          font-size: 20px;
+        }
+        .contact {
+          font-size: 28px;
+          text-shadow: none;
+          inline-size: 20rem;
+        }
+        /* iframe bruges på google map embeded */
+        iframe {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+        }
       }
-      /* iframe bruges på google map embeded */
-      iframe {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
+      /* ----------mobil version---------- */
+      @media (max-width: 800px) {
+        #content {
+          margin-top: 20%;
+          margin-left: 1rem;
+          margin-right: 1rem;
+          margin-bottom: 10px;
+        }
+        aside {
+          background-color: #c7e1c1;
+
+          gap: 10px;
+          min-width: 200px;
+          max-width: 400px;
+          max-height: auto;
+          padding: 12%;
+          margin: 13%;
+        }
+        /* article der indeholder google map */
+        article {
+          border: hsla(345, 75%, 34%, 0.247) 2px solid;
+
+          position: relative;
+        }
       }
     </style>
   </head>
@@ -72,6 +138,7 @@
     </header>
 
     <main>
+<<<<<<< HEAD
       <section class="splash"></section>
       <!-- Google map embed, copy past fra internet side, ændrede i iframe for at tilpasse det til hjemmesiden.-->
       <article>
@@ -96,6 +163,42 @@
           <li><a href="">Twitter</a></li>
         </ul>
       </aside>
+=======
+      <section id="content">
+        <aside>
+          <h4>Kontakt info</h4>
+          <ul class="contact">
+            <li>Mail: luksus@dolcelinde.dk</li>
+            <li>tlf: +45 33 12 21 86</li>
+            <li>
+              Adresse: VIII's Palæ, Amalienborg Slotsplads 5
+              <br />
+              1257 København
+            </li>
+          </ul>
+          <h4>Sociale media</h4>
+          <ul class="contact">
+            <li><a href=""> Facebook</a></li>
+            <li><a href="">Instergrame </a></li>
+            <li><a href="">Twitter</a></li>
+          </ul>
+        </aside>
+        <!-- Google map embed, copy past fra internet side, ændrede i iframe for at tilpasse det til hjemmesiden.-->
+
+        <article>
+          <div class="mapouter">
+            <iframe
+              src="https://maps.google.com/maps?q=Christian%20VIII's%20Pal%C3%A6,%20Amalienborg%20Slotsplads%205,%201257%20K%C3%B8benhavn&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </article>
+      </section>
+>>>>>>> 4fad1da04b493ea4f70afbcc52c0fc8c2d262391
     </main>
 
     <footer>

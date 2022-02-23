@@ -107,6 +107,16 @@ button:hover {
   box-shadow: 4px 4px 4px #c7e1c1;
 }
 
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #f299c1;
+  color: #fef4a8;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
 /* ----------footer---------- */
 footer h3 {
   font-family: "the_family_homeregular";
