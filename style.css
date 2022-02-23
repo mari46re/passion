@@ -49,7 +49,7 @@ h3 {
 }
 
 header {
-  background-color: #c7e1c188;
+  background-color: hsl(109, 34%, 82%, 0.533);
   display: flex;
   justify-content: space-around;
   font-size: 2rem;
