@@ -149,12 +149,7 @@ footer {
     border: none;
     display: block;
 
-<<<<<<< HEAD
-    width: 200px;
-
-=======
     width: 144px;
->>>>>>> 72c93d1d80eb0c05a995739aa03549b7d2c6b595
     justify-content: space-between;
     cursor: pointer;
   }
