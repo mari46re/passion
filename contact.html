@@ -10,10 +10,9 @@
       header {
         z-index: 9999;
       }
-      body {
-        max-height: 100vh;
-      }
-      @media (min-width: 600px) {
+
+      /* ----------desktop version---------- */
+      @media (min-width: 800px) {
         /* style unik til siden, med grid og flex */
         main {
           display: grid;
@@ -22,6 +21,7 @@
           margin-top: 20%;
           margin-left: 1rem;
           margin-right: 1rem;
+          margin-bottom: 10px;
         }
         aside {
           background-color: #c7e1c1;
@@ -30,9 +30,9 @@
           min-width: 200px;
           max-width: 400px;
           max-height: auto;
-          padding: 12%;
-          margin: 13%;
+          padding: 2rem;
         }
+
         /* article der indeholder google map */
         article {
           border: hsla(345, 75%, 34%, 0.247) 2px solid;
@@ -41,12 +41,14 @@
         }
         h4 {
           font-family: merel, sans-serif;
-          padding-top: 10px;
-          padding-bottom: 10px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          font-size: 20px;
         }
         .contact {
           font-size: 28px;
           text-shadow: none;
+          inline-size: 20rem;
         }
         /* iframe bruges på google map embeded */
         iframe {
@@ -56,11 +58,13 @@
           left: 0;
         }
       }
-      @media (max-width: 600px) {
+      /* ----------mobil version---------- */
+      @media (max-width: 800px) {
         main {
           margin-top: 20%;
           margin-left: 1rem;
           margin-right: 1rem;
+          margin-bottom: 10px;
         }
         aside {
           background-color: #c7e1c1;
@@ -102,9 +106,13 @@
       <aside>
         <h4>Kontakt info</h4>
         <ul class="contact">
-          <li>Mail: **</li>
-          <li>tlf: **</li>
-          <li>Adresse: **</li>
+          <li>Mail: luksus@dolcelinde.dk</li>
+          <li>tlf: +45 33 12 21 86</li>
+          <li>
+            Adresse: VIII's Palæ, Amalienborg Slotsplads 5
+            <br />
+            1257 København
+          </li>
         </ul>
         <h4>Sociale media</h4>
         <ul class="contact">
