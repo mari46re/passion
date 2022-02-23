@@ -107,7 +107,7 @@
       </nav>
     </header>
     <main>
-      <button>< TILBAGE</button>
+      <button id="tilbage">TILBAGE</button>
       <article>
         <div class="billede">
           <img class="kager" src="" alt="" />
@@ -208,7 +208,7 @@
         document.querySelector(".pris").textContent = kage.pris + " kr";
       }
 
-      document.querySelector("button").addEventListener("click", () => {
+      document.querySelector("#tilbage").addEventListener("click", () => {
         history.back();
       });
 
