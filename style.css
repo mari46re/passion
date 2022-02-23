@@ -105,6 +105,8 @@ h1 {
 button:hover {
   cursor: pointer;
   box-shadow: 4px 4px 4px #c7e1c1;
+  transform: scale(1.05);
+  transition: 0.1s;
 }
 
 button {
