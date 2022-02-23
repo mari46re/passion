@@ -13,7 +13,7 @@ html {
 }
 
 @font-face {
-  font-family: "the_family_homeregular";
+  font-family: "the_family_homeregular", sans-serif;
   src: url("fonte/thefamilyhome-axdz5-webfont.woff2") format("woff2"),
     url("fonte/thefamilyhome-axdz5-webfont.woff") format("woff");
   font-weight: normal;
@@ -84,7 +84,7 @@ h1,
 h2,
 button,
 header {
-  font-family: "the_family_homeregular";
+  font-family: "the_family_homeregular", sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -121,7 +121,7 @@ button {
 
 /* ----------footer---------- */
 footer h3 {
-  font-family: "the_family_homeregular";
+  font-family: "the_family_homeregular", sans-serif;
   font-weight: normal;
   font-style: normal;
 }
